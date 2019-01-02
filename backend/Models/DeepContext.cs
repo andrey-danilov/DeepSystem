@@ -8,8 +8,8 @@ namespace backend.Models
 {
     public class DeepContext : DbContext
     {
-        //public DbSet<Phone> Phones { get; set; }
-        //public DbSet<Order> Orders { get; set; }
+        public DbSet<Resource> Resources { get; set; }
+        public DbSet<ResourceField> ResourceFields { get; set; }
 
         public DeepContext(DbContextOptions<DeepContext> options)
             : base(options)
